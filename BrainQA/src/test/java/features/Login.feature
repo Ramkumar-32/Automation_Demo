@@ -5,6 +5,7 @@ When the user tap on External Login link
 Then the user should see the external login fields
 When the user enter the "<Email ID>" and Submit
 Then the user should see the check your email screen
+And the user able to click on the login button
 
 Examples:
 | Email ID           |
