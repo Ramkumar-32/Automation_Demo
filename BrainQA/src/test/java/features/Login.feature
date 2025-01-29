@@ -29,3 +29,14 @@ Then the user should see the all components in home screen
 Examples:
 | Profile Name              |
 | mobile.staff_profile_name |
+
+
+Scenario Outline: User login with an existing student Google account into the brain application
+    Given the user is on the mobile login screen
+    When the user selects the Google login option
+    And the user chooses the existing "<Google account>"
+    Then the user should see the home screen
+
+    Examples:
+      | Google account       |
+      | mobile.student_email |
