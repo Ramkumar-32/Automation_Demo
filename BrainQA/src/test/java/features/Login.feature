@@ -11,3 +11,14 @@ Examples:
 | Email ID           |
 | mobile.staff_email |
 
+Scenario Outline: User login with an existing staff Google account into the brain application
+    Given the user is on the mobile login screen
+    When the user selects the Google login option
+    And the user chooses the existing "<Google account>"
+    Then the user should see the home screen
+
+    Examples:
+      | Google account     |
+      | mobile.staff_email |
+
+
