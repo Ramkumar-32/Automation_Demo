@@ -22,3 +22,6 @@ Scenario Outline: User login with an existing staff Google account into the brai
       | mobile.staff_email |
 
 
+Scenario: User verifies all components in the home screen for staff
+Given the user is on home screen
+Then the user should see the all components in home screen
